@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
   devise_for :users
+  authenticated :user do
+    root :to => "controller#action", as: :authenticated_root
+  end
   devise_scope :user do
     root 'devise/registrations#new'
   end

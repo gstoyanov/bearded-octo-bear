@@ -50,6 +50,8 @@ end
 gem 'formtastic', :git => 'git://github.com/justinfrench/formtastic.git', :branch => '2.3-stable'
 gem 'formtastic-bootstrap'
 
+gem 'less-rails-bootstrap'
+
 # Devise is a flexible authentication solution for Rails based on Warden
 gem 'devise'
 
