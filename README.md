@@ -7,6 +7,12 @@ A generic rails app that makes starting a new project faster.
 
 Make a search and replace for the string "bob", if you'd like. Right now, you only need to change the db configuration and the session name located in `config/database.yml` and `config/initializers/session_store.rb` respectively.
 
+## SMTP
+The SMTP configuration is in `config/environments/development.rb`. You need to change at least the username and password. You also need to set up the same configuration in every other environment (or at least production).
+
+## Devise
+The devise configuration is in `config/initializers/devise.rb`. You need to change the `config.mailer_sender` to something like '"Name" &lt;name@domain.com&gt;'. You can use `rails g devise:views` to customize them. Read more about customizing devise [here](https://github.com/plataformatec/devise).
+
 ## Database
 This project uses postgres. Either change the database configuration in `config/database.yml` or create a postgres role with the same name as your linux user.
 

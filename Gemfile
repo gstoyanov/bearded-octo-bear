@@ -51,7 +51,7 @@ gem 'formtastic', :git => 'git://github.com/justinfrench/formtastic.git', :branc
 gem 'formtastic-bootstrap'
 
 # Devise is a flexible authentication solution for Rails based on Warden
-# gem 'devise'
+gem 'devise'
 
 # Enumerated attributes with I18n and ActiveRecord/Mongoid/MongoMapper osupport
 gem 'enumerize'
